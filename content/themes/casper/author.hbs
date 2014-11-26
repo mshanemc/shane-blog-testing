@@ -20,7 +20,9 @@
         {{/if}}
         <h1 class="author-title">{{name}}</h1>
         <h2 class="author-bio">{{bio}}</h2>
+        <h2 class="author-bio"><a href="/about-me">About Me</a></h2>
         <div class="author-meta">
+
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
             {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
             <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
